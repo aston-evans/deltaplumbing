@@ -1,0 +1,25 @@
+[project]
+name = "deltaplumbing"
+version = "0.1.0"
+description = "Standard Company website for Deltaplumbing"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn>=0.23.2",
+    "jinja2>=3.1.2",
+    "sqlalchemy>=2.0.23",
+    "python-multipart>=0.0.6"
+    
+]
+authors = [
+    {name = "Aston Evans", email = "findaston@gmail.com"}
+]
+readme = "README.md"
+
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "tox",
+    # Add any other dev tools here
+]
