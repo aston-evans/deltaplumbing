@@ -1,67 +1,36 @@
-<!--make route functions for each of the locations that are needed --> 
-<!--probably going to do this a little differently such that some of it can appear on the left hand side and other important stuff can appear on the top.-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container"> <!--either fluid or not-->
-    <a class="navbar-brand" href="home.html">DeltaPlumbing</a>
-    <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>-->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link"  href="home.html">Home</a>
-        </li>
-<!--ADJUST THESE ROUTES-->
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Bath</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Kitchen</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">HVAC</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">PVF</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Hardware Tools</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Chemicals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Misc</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Clearance</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="clearance.html">Contact</a>
-        </li>
-        <li class="nav-item dropdown"><!--put dropdown products in--> 
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            NEW Products
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-     
-      <form class="d-flex pt-2" role="search">
-        <div class="input-group">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <span class="input-group-text">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-        </svg>
-      </span>
-      </form>
-      </div>
-    </div>
-  </div>
-</nav>
+
+<nav class="navbar navbar-expand-lg bg-dark text-light shadow-sm">
+        <div class="container-fluid">
+            <!-- Brand and Top Links Group -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand text-light fw-bold me-4" href="/home">DeltaPlumbing</a>
+                <ul class="navbar-nav d-none d-lg-flex flex-row me-auto"> <!-- Show on large screens, hidden on smaller -->
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/clearance">Clearance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light me-4" href="/contact">Contact</a> 
+                </li>
+            </ul>
+            </div>
+
+            <!-- Search Form - positioned to the right -->
+            <form class="d-flex ms-auto" role="search"> 
+                <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                    <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </nav>
+
