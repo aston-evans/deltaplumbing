@@ -1,0 +1,106 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>DeltaPlumbing - Contact </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="icon" href="../static/images/DeltaIcon.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    {% include 'navbar.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+        <div class="flex-grow-1 p-4">
+            <h1 class="mb-4 text-primary">Contact Delta Plumbing Supplies</h1>
+            <p class="lead mb-4">
+                We're here to help with all your plumbing needs. Reach out to us with any questions or inquiries!
+            </p>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Our Information</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone me-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.65A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <strong>Phone:</strong> (718) 426-8800
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail me-2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    <strong>Email: </strong> johndoe@deltaplumbingsupplies.com
+                                </li>
+                            </ul>
+                            <p class="text-muted mt-3">
+                                Our team is available Monday to Saturday, 6:30 AM - 6:00 PM EST.
+                            </p>
+
+                            <!-- Our Location Map - Moved here -->
+                            <h5 class="card-title text-secondary mt-4">Our Location</h5>
+                            <div class="embed-responsive embed-responsive-16by9" style="height: 300px;">
+                                <iframe class="embed-responsive-item w-100 h-100 rounded"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.714589252084!2d-73.8623069240899!3d40.75758603681534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fea036bf1bb%3A0xb3abe812adb9023!2sDelta%20Plumbing%20%26%20Heating%20Supply%20Corp.!5e0!3m2!1sen!2sus!4v1701389278912!5m2!1sen!2sus"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <p class="text-muted mt-3 mb-0">
+                                Find us at 34-31 56th St, Woodside, NY 11377.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary">Send Us a Message</h5>
+                            <!-- Form action will point to your FastAPI endpoint -->
+                            <form action="/submit_contact_form" method="POST">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" name="full_name" placeholder="John Doe" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="John Doe" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="John Doe" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send me-2"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M15 15 22 2"/></svg>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+
+<!--adjust footer once more content has been added.-->
+<footer class="mt-5">
+    <div class="d-flex align-items-center justify-content-between">
+                <p class="mx-5">©2025 Delta Plumbing  </p>
+                <p class="mx-5">Powered by <a class="strong">Aston Evans </a></p>
+            </div>
+        </div>
+  </footer>
+
+</html>
